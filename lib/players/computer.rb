@@ -19,7 +19,7 @@ module Players
         board.cells.each_with_index do |cell, index| 
           binding.pry           
           if cell == " "
-            index+1   
+            return index+1   
           end
         end
       end
