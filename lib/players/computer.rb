@@ -16,11 +16,10 @@ module Players
       elsif board.cells[8] == " "
         "9"
       else
-        board.cells.detect do |cell| 
+        board.cells.each_with_index do |index, cell| 
           binding.pry           
           if cell == " "
-            i = cell.to_i
-            board.cells[i]    
+            index   
           end
         end
       end
