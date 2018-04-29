@@ -16,7 +16,7 @@ module Players
       elsif board.cells[8] == " "
         "9"
       else
-        board.cells.each_with_index do |index, cell| 
+        board.cells.each_with_index do |cell, index| 
           binding.pry           
           if cell == " "
             index   
