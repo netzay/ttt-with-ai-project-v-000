@@ -18,7 +18,7 @@ module Players
       else
         board.cells.detect do |cell| 
           binding.pry           
-          if cell.empty?
+          if cell == " "
             i = cell.to_i
             board.cells[i]    
           end
