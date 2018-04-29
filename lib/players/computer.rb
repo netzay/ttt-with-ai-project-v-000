@@ -17,7 +17,7 @@ module Players
         "9"
       else
         board.cells.each_with_index do |cell, index| 
-          binding.pry           
+          #binding.pry           
           if cell == " "
             return index+1   
           end
